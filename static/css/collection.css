@@ -1,3 +1,40 @@
 .mainContent > p {
 	line-height: 2em;
 }
+
+.header > h {
+	color: #1e9be8;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.edit-button {
+	color: white;
+    border: 4px solid #1e9be8;
+    background-color: #1e9be8;
+    position: fixed;
+    right: 2%;
+    cursor: pointer;
+}
+
+.activity-item {
+	position: relative;
+}
+
+.dispear {
+	display: none;
+}
+
+.activity-item > div {
+	position: absolute;
+    top: -5%;
+    left: 0px;
+}
+
+.activity-item > div > button {
+	color: white;
+    border: 1px solid white;
+    padding: 4px;
+    background-color: #1e9be8;
+    cursor: pointer;
+}

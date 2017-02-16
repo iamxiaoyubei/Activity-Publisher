@@ -3,19 +3,23 @@
   <head>
     <title>中大活动</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="{{ static_url("css/collection.css") }}">
+    <link href="../static/js/jquery-2.1.4.js">
+    <link rel="stylesheet" type="text/css" href="../static/css/collection.css">
+    <link rel="stylesheet" type="text/css" href="../static/js/manage.js">
   </head>
   <body>
+    <button class="edit-button">编辑</button>
     <div style="width:50%;margin:0 auto">
       <p></p>
       <section style="font-family: 微软雅黑;">
           <section class="" style="">
             <!-- 网页头部 -->
+            <!-- 利用header.html里面的模板 -->
               {% module Header() %}
 
-              {% for i, act in enumerate(activity) %}
-                {% module ActItem(act, i+1) %}
-              {% end %}
+              <!-- for 各个校区 -->
+              <!-- 利用school.html里面的模板 -->
+              
 
               <!-- 网页脚部 -->
               {% module Footer() %}
