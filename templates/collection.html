@@ -3,9 +3,9 @@
   <head>
     <title>中大活动</title>
     <meta charset="utf-8">
-    <link href="../static/js/jquery-2.1.4.js">
-    <link rel="stylesheet" type="text/css" href="../static/css/collection.css">
-    <link rel="stylesheet" type="text/css" href="../static/js/manage.js">
+    <script src="../static/js/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/collection.css" />
+    <script src="../static/js/manage.js"></script>
   </head>
   <body>
     <button class="edit-button">编辑</button>
@@ -14,15 +14,19 @@
       <section style="font-family: 微软雅黑;">
           <section class="" style="">
             <!-- 网页头部 -->
-            <!-- 利用header.html里面的模板 -->
-              {% module Header() %}
+            <!-- 引用header.html里面的模板 -->
 
-              <!-- for 各个校区 -->
-              <!-- 利用school.html里面的模板 -->
-              
+
+
+              <!-- for 各个分校区 -->
+              <!-- 引用school.html里面的模板 -->
+            
 
               <!-- 网页脚部 -->
-              {% module Footer() %}
+              <!-- {% module Footer() %} -->
+              <!-- 引用footer.html里面的模板 -->
+
+
           </section>
       </section>
       <p>

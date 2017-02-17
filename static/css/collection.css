@@ -2,10 +2,35 @@
 	line-height: 2em;
 }
 
+.header {
+    text-align: center;
+    border: 0.5px dashed black;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
 .header > h {
 	color: #1e9be8;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.header span {
+    font-size: 14px;
+}
+
+.header .header-campus {
+    text-align: center;
+    padding: 0 8px 0 8px;
+}
+
+.header ol > li > p {
+    margin: 0px;
+}
+
+.school-title {
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 .edit-button {
@@ -23,6 +48,10 @@
 
 .dispear {
 	display: none;
+}
+
+.canbe-edit {
+    contenteditable: true;
 }
 
 .activity-item > div {
