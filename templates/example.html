@@ -16,65 +16,61 @@
             <!-- 网页头部 -->
             <!-- 利用header.html里面的模板 -->
 
-            <div>
-              <div class="header">
-                <h>今日活动</h>
-                <!-- 今日各个校区重要活动 -->
-                  <!-- 利用activityList.html模板 -->
-
-                <fieldset style="margin-top: 20px; margin-bottom: 20px; max-width: 100%; box-sizing: border-box; min-width: 0px; -webkit-print-color-adjust: exact; border-width: 0px; border-style: initial; border-color: initial; word-wrap: break-word !important;">
-                  <section style="max-width: 100%; box-sizing: border-box; -webkit-print-color-adjust: exact; border-radius: 0px 5px 5px 0px; text-align: inherit; text-decoration: inherit; background-color: rgb(244, 244, 244); word-wrap: break-word !important;">
-                  <p style="max-width: 100%; min-height: 1em; text-indent: 0em; box-sizing: border-box !important; word-wrap: break-word !important; text-align: left;">
-                    <strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-                    <span style="max-width: 100%; font-size: 16px; box-sizing: border-box !important; word-wrap: break-word !important;">
-                    <span class="header-campus" style="max-width: 100%; color: rgb(255, 255, 255); background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">{{ 校区 }}</span>
-                  </span>
-                  </strong>
-                  <!-- <span style="max-width: 100%; font-size: 16px; box-sizing: border-box !important; word-wrap: break-word !important;">
-                    <span style="max-width: 100%; color: rgb(255, 255, 255); background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">
-                  </span>
-                  <span style="max-width: 100%; color: rgb(255, 255, 255); background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">
-                    &nbsp; &nbsp;&nbsp;</span>
-                  </span> -->
-                </p>
-
-                <ol class="list-paddingleft-2" style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  <li>
-                  <p style="max-width: 100%; min-height: 1em; text-align: left; line-height: 1.5em; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  <span style="max-width: 100%; color: rgb(89, 89, 89); font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  {{ 活动1 }}</span>
-                </p>
-                </li>
-                <li>
-                  <p style="max-width: 100%; min-height: 1em; text-align: left; line-height: 1.5em; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  <span style="max-width: 100%; color: rgb(89, 89, 89); box-sizing: border-box !important; word-wrap: break-word !important;">
-                  {{ 活动2 }}</span>
-                </p>
-                </li>
-                <li>
-                  <p style="max-width: 100%; min-height: 1em; text-align: left; line-height: 1.5em; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  <span style="max-width: 100%; color: rgb(89, 89, 89); box-sizing: border-box !important; word-wrap: break-word !important;">
-                  {{ 活动3 }}</span>
-                </p>
-                </li>
-                <li>
-                  <p style="max-width: 100%; min-height: 1em; text-align: left; line-height: 1.5em; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  <span style="max-width: 100%; color: rgb(89, 89, 89); box-sizing: border-box !important; word-wrap: break-word !important;">
-                  {{ 活动4 }}</span>
+            <section style="margin-top: 10px; margin-right: 10px; margin-left: 15px; padding: 16px; max-width: 100%; white-space: normal; widows: 1; -webkit-print-color-adjust: exact; font-family: Helvetica, arial, sans-serif; font-size: 14px; border-width: 1px; border-style: dashed; border-color: rgb(100, 100, 100); border-radius: 10px; text-align: center; background-color: rgb(255, 255, 255); box-sizing: border-box !important; word-wrap: break-word !important;">
+              <p style="color: rgb(62, 62, 62); max-width: 100%; min-height: 1em; box-sizing: border-box !important; word-wrap: break-word !important;">
+              <strong style="font-size: 18px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
+                <span style="max-width: 100%; -webkit-print-color-adjust: exact; line-height: 3.4; color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">今日活动
                 </span>
-                </p>
-                </li>
-                </ol>
+              </strong>
+              <br>
+              </p>
+              <!-- 今日各个类型重要活动 -->
+                  <!-- 利用activityList.html模板 -->
+              <fieldset style="color: rgb(62, 62, 62); margin-top: 20px; margin-bottom: 20px; max-width: 100%; box-sizing: border-box; min-width: 0px; -webkit-print-color-adjust: exact; border-width: 0px; border-style: initial; border-color: initial; word-wrap: break-word !important;">
+              </fieldset>
+              <fieldset style="margin-top: 20px; margin-bottom: 20px; max-width: 100%; box-sizing: border-box; min-width: 0px; -webkit-print-color-adjust: exact; border-width: 0px; border-style: initial; border-color: initial; word-wrap: break-word !important;">
+                <section style="max-width: 100%; box-sizing: border-box; -webkit-print-color-adjust: exact; border-radius: 0px 5px 5px 0px; text-align: inherit; text-decoration: inherit; background-color: rgb(244, 244, 244); word-wrap: break-word !important;">
+                  <p style="color: rgb(62, 62, 62); max-width: 100%; min-height: 1em; text-indent: 0em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
+                    <strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
+                      <span style="max-width: 100%; font-size: 16px; box-sizing: border-box !important; word-wrap: break-word !important;">
+                        <span style="max-width: 100%; color: rgb(255, 255, 255); background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp; &nbsp; {{类型}}
+                        </span>
+                      </span>
+                    </strong>
+                    <span style="max-width: 100%; font-size: 16px; box-sizing: border-box !important; word-wrap: break-word !important;">
+                      <span style="max-width: 100%; color: rgb(255, 255, 255); background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp; &nbsp;&nbsp;
+                      </span>
+                    </span>
+                    <br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
+                  </p>
+                  <p style="color: rgb(62, 62, 62); max-width: 100%; min-height: 1em; text-indent: 0em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
+                    <br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
+                  </p>
+                  <ol class="list-paddingleft-2" style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
+                    <li>
+                      <p style="max-width: 100%; min-height: 1em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
+                        <span style="color:#595959">{{活动1}}
+                        </span>
+                      </p>
+                    </li>
+                    <li>
+                      <p style="max-width: 100%; min-height: 1em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
+                        <span style="color:#595959">{{活动2}}</span>
+                      </p>
+                    </li>
+                  </ol>
                 </section>
               </fieldset>
-              </div>
-            </div>
+            </section>
+
+            
 
 
               <!-- {% module Header() %} -->
 
-              <!-- for 各个校区 -->
+              <!-- for 各个类型 -->
               <!-- 利用school.html里面的模板 -->
+            </br>
             <section data-role="paragraph" class="school-title" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)" style="max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-size: 16px; line-height: 25.6px; white-space: normal; widows: 1; font-family: 微软雅黑; border-width: 0px; border-style: none; border-color: initial; background-color: rgb(255, 255, 255); word-wrap: break-word !important;">
               <section class="" data-tools="135编辑器" data-id="82336" style="max-width: 100%; box-sizing: border-box; border-width: 0px; border-style: none; border-color: initial; word-wrap: break-word !important;">
               <section style="margin: 5px; max-width: 100%; box-sizing: border-box; border-width: 0px; border-style: initial; border-color: initial; text-align: center; word-wrap: break-word !important;">
@@ -91,7 +87,7 @@
               <span style="max-width: 100%; font-size: 24px; background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">
               <strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
               <span style="max-width: 100%; color: rgb(255, 255, 255); box-sizing: border-box !important; word-wrap: break-word !important;">
-                &nbsp; &nbsp; &nbsp; {{ 校区 }} &nbsp; &nbsp; &nbsp;</span>
+                &nbsp; &nbsp; {{ 校区 }} &nbsp; &nbsp;</span>
             </strong>
             </span>
             </p>
@@ -106,6 +102,7 @@
             </section>
             </section>
 
+          </br>
 
             <!-- 校区的各个活动 -->
             <!-- {% for i, act in enumerate(activity) %}
