@@ -1,6 +1,6 @@
 $(function() {
 	var canBeEdit = false;
-	var editButton = $('.edit-button');
+	var editButton = $('.edit');
 	var activityItem = $('.activity-item > div');
 	editButton.bind("click", function() {
 		if (canBeEdit == false) {

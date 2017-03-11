@@ -1,132 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>中大活动</title>
+    <title>审核页面</title>
     <meta charset="utf-8">
     <script src="../static/js/jquery-2.1.4.js"></script>
     <link rel="stylesheet" type="text/css" href="../static/css/collection.css" />
-    <script src="../static/js/manage.js"></script>
-    <script src="../static/js/jquery.zeroclipboard.min.js"></script>
-    <script>
-      jQuery(document).ready(function($) {
-        $("body")
-          .on("copy", ".copy-button", function(/* ClipboardEvent */ e) {
-            e.clipboardData.clearData();
-            e.clipboardData.setData("text/plain", $(this).data("zclip-text"));
-            e.preventDefault();
-          });
-      });
-    </script>
   </head>
   <body>
-    <button class="edit button">编辑</button>
-    <button class="copy button">复制</button>
-    <button class="east button"><a href="">东校区</a></button>
-    <button class="south button"><a href="">南校区</a></button>
-    <button class="north button"><a href="">北校区</a></button>
-    <button class="zhuhai button"><a href="">珠海校区</a></button>
+    <button class="edit button">确认提交当前审核结果</button>
+
     <div style="width:50%;margin:0 auto">
       <p></p>
       <section style="font-family: 微软雅黑;">
           <section class="" style="">
-            <!-- 网页头部 -->
-            <!-- 利用header.html里面的模板 -->
-
-            <section style="margin-top: 10px; margin-right: 10px; margin-left: 15px; padding: 16px; max-width: 100%; white-space: normal; widows: 1; -webkit-print-color-adjust: exact; font-family: Helvetica, arial, sans-serif; font-size: 14px; border-width: 1px; border-style: dashed; border-color: rgb(100, 100, 100); border-radius: 10px; text-align: center; background-color: rgb(255, 255, 255); box-sizing: border-box !important; word-wrap: break-word !important;">
-              <p style="color: rgb(62, 62, 62); max-width: 100%; min-height: 1em; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <strong style="font-size: 18px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-                <span style="max-width: 100%; -webkit-print-color-adjust: exact; line-height: 3.4; color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">今日活动
-                </span>
-              </strong>
-              <br>
-              </p>
-              <!-- 今日各个类型重要活动 -->
-                  <!-- 利用activityList.html模板 -->
-              <fieldset style="color: rgb(62, 62, 62); margin-top: 20px; margin-bottom: 20px; max-width: 100%; box-sizing: border-box; min-width: 0px; -webkit-print-color-adjust: exact; border-width: 0px; border-style: initial; border-color: initial; word-wrap: break-word !important;">
-              </fieldset>
-              <fieldset style="margin-top: 20px; margin-bottom: 20px; max-width: 100%; box-sizing: border-box; min-width: 0px; -webkit-print-color-adjust: exact; border-width: 0px; border-style: initial; border-color: initial; word-wrap: break-word !important;">
-                <section style="max-width: 100%; box-sizing: border-box; -webkit-print-color-adjust: exact; border-radius: 0px 5px 5px 0px; text-align: inherit; text-decoration: inherit; background-color: rgb(244, 244, 244); word-wrap: break-word !important;">
-                  <p style="color: rgb(62, 62, 62); max-width: 100%; min-height: 1em; text-indent: 0em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
-                    <strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-                      <span style="max-width: 100%; font-size: 16px; box-sizing: border-box !important; word-wrap: break-word !important;">
-                        <span style="max-width: 100%; color: rgb(255, 255, 255); background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp; &nbsp; {{类型}}
-                        </span>
-                      </span>
-                    </strong>
-                    <span style="max-width: 100%; font-size: 16px; box-sizing: border-box !important; word-wrap: break-word !important;">
-                      <span style="max-width: 100%; color: rgb(255, 255, 255); background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">&nbsp; &nbsp;&nbsp;
-                      </span>
-                    </span>
-                    <br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  </p>
-                  <p style="color: rgb(62, 62, 62); max-width: 100%; min-height: 1em; text-indent: 0em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
-                    <br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-                  </p>
-                  <ol class="list-paddingleft-2" style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-                    <li>
-                      <p style="max-width: 100%; min-height: 1em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
-                        <span style="color:#595959">{{活动1}}
-                        </span>
-                      </p>
-                    </li>
-                    <li>
-                      <p style="max-width: 100%; min-height: 1em; text-align: left; box-sizing: border-box !important; word-wrap: break-word !important;">
-                        <span style="color:#595959">{{活动2}}</span>
-                      </p>
-                    </li>
-                  </ol>
-                </section>
-              </fieldset>
-            </section>
-
-            
-
-
-              <!-- {% module Header() %} -->
-
-              <!-- for 各个类型 -->
-              <!-- 利用school.html里面的模板 -->
-            </br>
-            <section data-role="paragraph" class="school-title" data-color="rgb(33, 33, 34)" data-custom="rgb(33, 33, 34)" style="max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-size: 16px; line-height: 25.6px; white-space: normal; widows: 1; font-family: 微软雅黑; border-width: 0px; border-style: none; border-color: initial; background-color: rgb(255, 255, 255); word-wrap: break-word !important;">
-              <section class="" data-tools="135编辑器" data-id="82336" style="max-width: 100%; box-sizing: border-box; border-width: 0px; border-style: none; border-color: initial; word-wrap: break-word !important;">
-              <section style="margin: 5px; max-width: 100%; box-sizing: border-box; border-width: 0px; border-style: initial; border-color: initial; text-align: center; word-wrap: break-word !important;">
-              <section style="max-width: 100%; display: inline-block; color: inherit; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <section style="margin: 5px; max-width: 100%; height: 1.5em; color: inherit; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <section style="max-width: 100%; box-sizing: border-box; display: inline-block; height: 24px; width: 1.5em; float: left; border-top: 0.4em solid rgb(198, 198, 199); border-right-color: rgb(198, 198, 199); border-bottom-color: rgb(198, 198, 199); border-left: 0.4em solid rgb(198, 198, 199); color: inherit; word-wrap: break-word !important;">
-            </section>
-            <section style="max-width: 100%; box-sizing: border-box; display: inline-block; color: rgb(70, 70, 72); clear: both; border-color: rgb(198, 198, 199); word-wrap: break-word !important;">
-            </section>
-            </section>
-            <section style="margin: -1em 5px; padding: 10px 30px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; color: inherit; display: inline-block;">
-              <section style="max-width: 100%; color: rgb(51, 51, 51); word-break: break-all; display: inline-block; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <p style="max-width: 100%; min-height: 1em; font-size: 20px; line-height: 28px; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <span style="max-width: 100%; font-size: 24px; background-color: rgb(30, 155, 232); box-sizing: border-box !important; word-wrap: break-word !important;">
-              <strong style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <span style="max-width: 100%; color: rgb(255, 255, 255); box-sizing: border-box !important; word-wrap: break-word !important;">
-                &nbsp; &nbsp; {{ 校区 }} &nbsp; &nbsp;</span>
-            </strong>
-            </span>
-            </p>
-            </section>
-            </section>
-            <section style="max-width: 100%; height: 1.5em; color: inherit; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <section style="max-width: 100%; box-sizing: border-box; height: 24px; width: 1.5em; float: right; border-bottom: 0.4em solid rgb(198, 198, 199); border-top-color: rgb(198, 198, 199); border-right: 0.4em solid rgb(198, 198, 199); border-left-color: rgb(198, 198, 199); color: inherit; word-wrap: break-word !important;">
-            </section>
-            </section>
-            </section>
-            </section>
-            </section>
-            </section>
-
-          </br>
 
             <!-- 校区的各个活动 -->
             <!-- {% for i, act in enumerate(activity) %}
               {% module ActItem(act, i+1) %}
                {% end %} -->
-
+            </br>
+            </br>
             <section class="activity-item" style="margin-top: 20px; padding-right: 5px; padding-left: 5px; line-height: 10px; border: 1px solid rgb(30, 155, 232); margin-bottom: -10px; box-sizing: border-box; text-align: center;margin-bottom: 70px;">
-              <div class="dispear"><!-- <button class="edit">编辑</button> --><button class="delete">删除</button><button class="upmove">上移</button><button class="downmove">下移</button></div>
+              <div>
+                <input type="radio" name="checkAct1" class="radio"/><span>通过</span>
+                <input type="radio" name="checkAct1" class="radio"/><span>不通过</span>
+                <input type="text" class="reason" maxlength="15" placeholder="（原因)：少于15字">
+              </div>
               <section style="color: inherit; padding: 0px; font-size: 16px; height: 8px; margin: -4px auto; width: 20%; text-align: center; box-sizing: border-box; background-color: rgb(254, 254, 254);">
                 <section style="width: 8px; height: 8px; border-radius: 100%; line-height: 1; font-size: 18px; text-decoration: inherit; border-color: rgb(30, 155, 232); display: inline-block; color: rgb(255, 255, 255); float: left; box-sizing: border-box; background-color: rgb(30, 155, 232);"></section>
                 <section style="width: 2.5em;height: 2.5em;border-radius: 50%;display: inline-block;line-height: 40px;margin-top: -15px;color: rgb(255, 255, 255);border-color: rgb(30, 155, 232);box-sizing: border-box;background-color: rgb(30, 155, 232);text-align: center;">
@@ -202,9 +101,13 @@
             </section>
 
 
-
+            </br>
             <section class="activity-item" style="margin-top: 20px; padding-right: 5px; padding-left: 5px; line-height: 10px; border: 1px solid rgb(30, 155, 232); margin-bottom: -10px; box-sizing: border-box; text-align: center;margin-bottom: 70px;">
-              <div class="dispear"><!-- <button class="edit">编辑</button> --><button class="delete">删除</button><button class="upmove">上移</button><button class="downmove">下移</button></div>
+              <div>
+                <input type="radio" name="checkAct2" class="radio"/><span>通过</span>
+                <input type="radio" name="checkAct2" class="radio"/><span>不通过</span>
+                <input type="text" class="reason" maxlength="15" placeholder="（原因)：少于15字">
+              </div>
               <section style="color: inherit; padding: 0px; font-size: 16px; height: 8px; margin: -4px auto; width: 20%; text-align: center; box-sizing: border-box; background-color: rgb(254, 254, 254);">
                 <section style="width: 8px; height: 8px; border-radius: 100%; line-height: 1; font-size: 18px; text-decoration: inherit; border-color: rgb(30, 155, 232); display: inline-block; color: rgb(255, 255, 255); float: left; box-sizing: border-box; background-color: rgb(30, 155, 232);"></section>
                 <section style="width: 2.5em;height: 2.5em;border-radius: 50%;display: inline-block;line-height: 40px;margin-top: -15px;color: rgb(255, 255, 255);border-color: rgb(30, 155, 232);box-sizing: border-box;background-color: rgb(30, 155, 232);text-align: center;">
@@ -277,70 +180,10 @@
                         </p>
                         {% end %}
               </section>
-            </section>
-
-            <fieldset style="margin-top: 20px; margin-bottom: 20px; max-width: 100%; box-sizing: border-box; min-width: 0px; -webkit-print-color-adjust: exact; font-family: Helvetica, arial, sans-serif; font-size: 14px; border-width: 0px; border-style: initial; border-color: initial; background-color: rgb(255, 255, 255); word-wrap: break-word !important;">
-              <section style="max-width: 100%; box-sizing: border-box; -webkit-print-color-adjust: exact; border-radius: 0px 5px 5px 0px; text-align: inherit; text-decoration: inherit; background-color: rgb(244, 244, 244); word-wrap: break-word !important;">
-              <section style="padding: 8px; max-width: 100%; box-sizing: border-box; -webkit-print-color-adjust: exact; word-wrap: break-word !important;">
-              <section style="margin-top: 10px; margin-right: 10px; margin-left: 15px; padding: 16px; max-width: 100%; -webkit-print-color-adjust: exact; border-width: 1px; border-style: dashed; border-color: rgb(100, 100, 100); border-radius: 10px; text-align: center; background-color: rgb(255, 255, 255); box-sizing: border-box !important; word-wrap: break-word !important;">
-              <span style="max-width: 100%; -webkit-print-color-adjust: exact; line-height: 3.4; color: rgb(63, 63, 63); font-size: 16px; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <strong style="max-width: 100%; -webkit-print-color-adjust: exact; box-sizing: border-box !important; word-wrap: break-word !important;">
-              长按查看更多北校活动</strong>
-            </span>
-            <p style="max-width: 100%; min-height: 1em; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <img data-ratio="0.948051948051948" data-s="300,640" data-src="http://mmbiz.qpic.cn/mmbiz_png/A9EucKPsZKgicdPpB4icca3PAD7DMq1ClsJYNHkJxy4ibo1vZHMTQPiatmogZ5EDxPYH3kxd9WnpKrlUzfriaKTUwEw/640?wx_fmt=png" data-type="png" data-w="231" style="box-sizing: border-box !important; word-wrap: break-word !important; visibility: visible !important; width: auto !important; height: auto !important;" width="auto" _width="auto" src="http://mmbiz.qpic.cn/mmbiz_png/A9EucKPsZKgicdPpB4icca3PAD7DMq1ClsJYNHkJxy4ibo1vZHMTQPiatmogZ5EDxPYH3kxd9WnpKrlUzfriaKTUwEw/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" data-fail="0">
-            </p>
-            <p style="max-width: 100%; min-height: 1em; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-            </p>
-            </section>
-            <p style="max-width: 100%; min-height: 1em; box-sizing: border-box !important; word-wrap: break-word !important;">
-              <br style="max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">
-            </p>
-            </section>
-            </section>
-            </fieldset>              
-
-              <!-- 网页脚部 -->
-              <!-- {% module Footer() %} -->
-              <p class="" data-id="86183" style="line-height: 25.6px; border: 0px none; text-align: center;">
-                  <br/>
-              </p>
-              <p class="" data-id="86183" style="line-height: 25.6px; border: 0px none; text-align: center;">
-                  <br/>
-              </p>
-              <p class="" data-id="86183" style="line-height: 25.6px; border: 0px none;">
-                  <br/>
-              </p>
-              <section class="" data-id="86032" style="line-height: 25.6px; border: 0px none;">
-                  <section style="text-align: center;">
-                      <section style="margin-right: auto; margin-left: auto; padding-right: 15px; padding-left: 15px; display: inline-block; background-color: rgb(254, 254, 254);">
-                          <p style="color: inherit;">
-                              <span class="" data-brushtype="text" style="font-size: 14px;">END</span>
-                          </p>
-                      </section>
-                      <section style="margin-top: -12px; margin-bottom: 10px;">
-                          <section data-width="100%" style="border-top-width: 1px; border-top-style: dashed; width: 100%; border-color: rgb(33, 33, 34);">
-                              <br/>
-                          </section>
-                      </section>
-                  </section>
-              </section>
-
-              <p style="text-align: center;">
-                  <img  data-ratio="0.4338235294117647" data-w="544" src="../static/images/footer.jpg
-                  " word_img="qrcode.png" style="width:100%"/>
-              </p>
-              <p>
-                  <br/>
-              </p>
-
+            </section>       
 
           </section>
       </section>
-      <p>
-          <br/>
-      </p>
     </div>
   </body>
 </html>
